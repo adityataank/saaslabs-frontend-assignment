@@ -24,7 +24,7 @@
     cursor: pointer;
     color: var(--heading-color);
     transition: color 0.1s ease;
-
+    user-select: none;
     svg {
       position: absolute;
       right: -20px;
