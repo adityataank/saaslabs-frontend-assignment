@@ -1,0 +1,19 @@
+.tableData {
+  text-align: right;
+  font-size: 16px;
+  &:last-child {
+    padding-right: var(--table-last-child-padding);
+  }
+}
+
+.tableRow {
+  height: 64px;
+  background-color: var(--white);
+  transition: background-color 0.3s ease;
+  &:nth-child(even) {
+    background-color: var(--row-blue);
+  }
+  &:hover {
+    background-color: var(--row-hover-color);
+  }
+}

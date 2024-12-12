@@ -1,0 +1,37 @@
+.tableHeader {
+  position: sticky;
+  top: 0;
+}
+
+.heading {
+  background-color: var(--light-blue);
+  height: 64px;
+  &:first-child {
+    width: 64px;
+  }
+  &:last-child {
+    padding-right: var(--table-last-child-padding);
+  }
+
+  span {
+    float: right;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+    position: relative;
+    cursor: pointer;
+    color: var(--heading-color);
+    transition: color 0.1s ease;
+
+    svg {
+      position: absolute;
+      right: -20px;
+    }
+
+    &:hover {
+      color: black;
+    }
+  }
+}
